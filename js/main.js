@@ -6,7 +6,7 @@ function timePassed() {
 }
 
 //  TimeOut
-var date = new Date("2021/4/7 00:00:00");
+var date = new Date("2021/4/8 00:00:00");
 setToHappen = function(fn, date) {
   var now = new Date().getTime();
   var diff = date.getTime() - now;
