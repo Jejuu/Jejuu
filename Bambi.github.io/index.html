@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" media="screen" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Cairo:100,200,300,400,500,700,900&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="js/jquery.countdownTimer.js"></script>
+  <title>BAMBI'S BIRTHDAY</title>
+</head>
+
+<body>
+  <div class="content">
+    <div class="images">
+      <img id="img" src="https://64.media.tumblr.com/f58cfede805432820b6527df5831ca2a/tumblr_pob88w5RFS1rcgos9_1280.jpg">
+      <img id="img" src="https://i.pinimg.com/originals/2e/b7/c4/2eb7c474bb03432404c8e6707e870ea6.jpg">
+      <img id="img" src="https://i0.wp.com/bookmypainting.com/wp-content/uploads/2019/06/massacre-of-the-innocents-1.jpeg?resize=576%2C446&ssl=1">
+      <img id="img" src="https://i.pinimg.com/736x/35/10/83/3510835f656e2eb2438b72329e87b1de.jpg">
+      <img id="img" src="https://i.pinimg.com/originals/9a/f6/48/9af648e3ebf84b24d0c795d78bd00e21.jpg">
+    </div>
+  </div>
+  <div class="container">
+    <div class="hero">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 birthday">
+          <p id="timer"></p>
+        </div>
+      </div>
+    </div>
+    <div class="about">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 birthday">
+          <img src="1.jpeg" />
+          <h2>HAPPY BIRTHDAY BAMBI</h2>
+          <h3>Your hacker enjoyed doing this for you
+            <3</h3>
+              <br>
+              <h4>Made with Love By Jeju</h4>
+        </div>
+      </div>
+      <div class="row justify-content-between">
+        <div class="col-12 col-sm-8 col-md-6 col-lg-5 birthday">
+          <img src="2.jpeg" />
+          <h3>“So here's to you, The most beautiful thing that I have never seen.”</h3>
+          <footer class="blockquote-footer">The Most Beautiful Thing by Bruno Major</footer>
+        </div>
+        <div class="col-12 col-sm-8 col-md-6 col-lg-5 birthday">
+          <img src="3.jpeg" />
+          <h3>“If you can be honest then I’ll do anything, I’ll go all the way, I’ll jump off a plane, target on my chest for you.”
+          </h3>
+          <footer class="blockquote-footer">Target On My Chest by Brent Faiyaz</footer>
+        </div>
+        <div class="col-12 col-sm-8 col-md-6 col-lg-5 birthday">
+          <img src="4.jpeg" />
+          <h3>“As long as you're next to me, Just the two of us.”
+          </h3>
+          <footer class="blockquote-footer">My Kind of Woman by Mac DeMarco</footer>
+        </div>
+        <div class="col-12 col-sm-8 col-md-6 col-lg-5 birthday">
+          <img src="5.jpeg" />
+          <h3>“Sunsets, I wanna hear your voice, A love that nobody could destroy.”
+          </h3>
+          <footer class="blockquote-footer">Sunsetz by Cigarettes After Sex</footer>
+        </div>
+        <div class="wrapper"></div>
+      </div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+<script>
+  var indexValue = 0;
+
+  function slideShow() {
+    setTimeout(slideShow, 2500);
+    var x;
+    const img = document.querySelectorAll("#img");
+    for (x = 0; x < img.length; x++) {
+      img[x].style.opacity = 0;
+      img[x].style.height = 0;
+      img[x].style.width = 0;
+
+    }
+    indexValue++;
+    if (indexValue > img.length) {
+      indexValue = 1
+    }
+    img[indexValue - 1].style.opacity = 0.4;
+    img[indexValue - 1].style.height = "100%";
+    img[indexValue - 1].style.width = "100%";
+  }
+  slideShow();
+</script>
+
+</html>
