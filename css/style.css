@@ -91,6 +91,8 @@ body {
 .content .images {
   height: 100%;
   width: 100%;
+  top: -3%;
+  position: relative;
 }
 
 .images #img {
