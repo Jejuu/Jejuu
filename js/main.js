@@ -6,20 +6,20 @@ function timePassed() {
 }
 
 //  TimeOut
-var date = new Date("2021/4/8 00:00:00");
-setToHappen = function(fn, date) {
-  var now = new Date().getTime();
-  var diff = date.getTime() - now;
-  console.log(diff);
-  return setTimeout(fn, diff);
-}
-setToHappen(timePassed, date);
+//var date = new Date("2021/4/7 00:00:00");
+//setToHappen = function(fn, date) {
+  //var now = new Date().getTime();
+  //var diff = date.getTime() - now;
+  //console.log(diff);
+  //return setTimeout(fn, diff);
+//}
+//setToHappen(timePassed, date);
 
 
 // Scroll animation
 
 $(document).ready(function() {
-
+  timePassed()
   // Add smooth scrolling to all links
   $(".transait").on('click', function(event) {
 
